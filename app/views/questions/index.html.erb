@@ -1,0 +1,4 @@
+<h1>面接対策問題一覧</h1>
+<% @questions.each do |q| %>
+  <p><%= link_to q.content, question_path(q) %></p>
+<% end %>

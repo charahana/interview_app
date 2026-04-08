@@ -1,0 +1,17 @@
+<h2>問題</h2>
+<p><%= @question.content %></p>
+<button onclick="toggleAnswer()">回答を見る</button>
+<div id="answer" style="display:none;">
+  <h3>回答</h3>
+  <p><%= @question.answer %></p>
+</div>
+<script>
+function toggleAnswer() {
+  var x = document.getElementById("answer");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
