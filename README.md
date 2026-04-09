@@ -1,24 +1,37 @@
-# README
+# Interview_APP
+## 作成の目的
+未経験からエンジニアを目指す中で面接では技術的質問や自身の経験を適切に表現することの難しさを感じていました。
+また、面接練習の機会や時間に制約があり、自分で反復練習できる環境を作る必要がありました。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 実現したこと
+- エンジニアに関連する質問と模範回答を整理
+- 学習した内容を問題形式でアウトプット
+- 回答や解説を自分の言葉でまとめ、面接で説明できる状態にした
+​
+### 学習効果
+- 基本的な技術の理解の定着
+- 面接での表現力向上
+- 自己学習の習慣化
+​
+### 主な機能
+- 問題の作成・編集・削除(CRUD)
+- 問題一覧・詳細表示
 
-Things you may want to cover:
+## 使い方
+1.一覧画面から問題を選択する
+2.回答を確認しながら理解を深める
+3.必要に応じて問題を追加・編集
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用技術
+- Ruby 3.x
+- Ruby on Rails 7.x
+- PostgreSQL
+- HTML / CSS
+- JavaScript（jQuery）
+​
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
