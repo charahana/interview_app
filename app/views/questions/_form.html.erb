@@ -1,15 +1,15 @@
 <%= form_with model: @question do |f| %>
-  <div>
-    <%= f.label :content, "質問" %><br>
-    <%= f.text_area :content %>
+  <div class="form-group">
+    <%= f.label :content, "質問" %>
+    <%= f.text_area :content, class: "form-control", rows: 3 %>
   </div>
-  <div>
-    <%= f.label :answer, "回答" %><br>
-    <%= f.text_area :answer %>
+  <div class="form-group">
+    <%= f.label :answer, "回答" %>
+    <%= f.text_area :answer, class: "form-control", rows: 5 %>
   </div>
-  <div>
-    <%= f.label :category, "カテゴリ" %><br>
-    <%= f.text_field :category %>
+  <div class="form-group">
+    <%= f.label :category, "カテゴリ" %>
+    <%= f.text_field :category, class: "form-control" %>
   </div>
-  <%= f.submit "保存" %>
+  <%= f.submit "保存", class: "btn btn-success" %>
 <% end %>
