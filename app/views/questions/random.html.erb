@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <h2>質問</h2>
+  <div class="card mb-3">
+    <div class="card-body">
+      <p><%= @question.content %></p>
+    </div>
+  </div>
+  <%= link_to "次の質問", random_questions_path, class: "btn btn-primary" %>
+</div>
