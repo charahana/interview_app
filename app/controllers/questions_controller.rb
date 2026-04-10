@@ -42,6 +42,10 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def random
+    @question = Question.order("RANDOM()").first
+  end
+
   private
 
   def set_question
