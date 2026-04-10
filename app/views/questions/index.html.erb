@@ -1,6 +1,7 @@
 <div class="container mt-4">
   <h1>質問一覧</h1>
   <%= link_to "新規作成", new_question_path, class: "btn btn-primary mb-3" %>
+  <%= link_to "ランダム出題", random_questions_path, class: "btn btn-success mb-3" %>
   <div class="list-group">
     <% @questions.each do |q| %>
       <div class="list-group-item">
