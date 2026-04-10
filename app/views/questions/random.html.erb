@@ -5,5 +5,19 @@
       <p><%= @question.content %></p>
     </div>
   </div>
-  <%= link_to "次の質問", random_questions_path, class: "btn btn-primary" %>
+  <button class="btn btn-info mb-3" onclick="toggleAnswer()">回答を見る</button>
+  <div id="answer" class="card mb-3" style="display:none;">
+    <div class="card-body">
+      <h5>回答</h5>
+      <p><%= @question.answer %></p>
+    </div>
+  </div>
+  <%= link_to "次の質問", random_questions_path, class: "btn btn-primary mb-3" %>
+  <%= link_to "一覧へ戻る", questions_path, class: "btn btn-secondary mb-3" %>
 </div>
+<script>
+function toggleAnswer() {
+  var x = document.getElementById("answer");
+  x.style.display = (x.style.display === "none") ? "block" : "none";
+}
+</script>
