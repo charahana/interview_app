@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  before_action :set_question, only: [:show, :edit, :update, :destory]
+  before_action :set_question, only: [:show, :edit, :update, :destroy]
 
   def index
     @questions = Question.all
@@ -34,8 +34,8 @@ class QuestionsController < ApplicationController
     end
   end
   
-  def destory
-    if @question.destory
+  def destroy
+    if @question.destroy
       redirect_to questions_path, notice: "削除しました"
     else
       redirect_to questions_path, alert: "削除出来ませんでした"
